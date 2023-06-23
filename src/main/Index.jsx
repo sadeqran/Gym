@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "animate.css";
 import Content from "./Content";
-import { BrowserRouter } from "react-router-dom";
 import Button from "./Button";
 
 const Index = () => {
@@ -9,11 +8,11 @@ const Index = () => {
   const [name, setName] = useState("button");
 
   const handleClick = () => {
-    setName("button pink");
-    setCont("pink");
+    setName("button up");
+    setCont("up");
   };
   return (
-    <BrowserRouter>
+    <>
       <div className="d-flex justify-content-center top-250">
         <Button
           targetpath="/chest"
@@ -38,7 +37,7 @@ const Index = () => {
       </div>
 
       <Content cont={cont} />
-    </BrowserRouter>
+    </>
   );
 };
 
